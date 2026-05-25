@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActuSport</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-bg: #0f172a;
+            --accent-color: #3b82f6;
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --text-white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: var(--text-white);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid var(--accent-color);
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .links-container {
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .link-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            margin-bottom: 15px;
+            transition: transform 0.2s, background 0.3s;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            color: white;
+        }
+
+        .link-card:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.2);
+            border-color: var(--accent-color);
+        }
+
+        /* Style spécifique pour les icônes et logos */
+        .link-card i {
+            font-size: 1.5rem;
+            width: 40px;
+            color: var(--accent-color);
+        }
+
+        .brand-logo {
+            width: 32px; /* Taille adaptée pour s'aligner avec les icônes */
+            height: auto;
+            margin-right: 8px;
+        }
+
+        .link-text {
+            flex-grow: 1;
+            text-align: center;
+            font-weight: 600;
+            margin-right: 40px;
+        }
+
+        .promo-box {
+            background: linear-gradient(90deg, #1d4ed8, #3b82f6);
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 25px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+        }
+
+        .promo-code {
+            display: block;
+            font-size: 1.3rem;
+            letter-spacing: 2px;
+            color: #ffd700;
+            margin-top: 5px;
+        }
+
+        footer {
+            margin-top: auto;
+            font-size: 0.8rem;
+            opacity: 0.5;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="../actusport_logo.jpg" alt="Logo" class="profile-img">
+        <h1>ActuSport</h1>
+        <p>Découvrez le monde passionnant du sport et des pari sportifs en ligne avec nous ! Nos meilleurs analystes travaillent dur chaque jours pour vous satisfaire.</p>
+    </div>
+
+    <div class="links-container">
+        <div class="promo-box">
+           INSCRIS-TOI SUR 1XBET, BETWINNER et 1WIN AVEC LE MEILLEUR CODE PROMO
+            <span class="promo-code">ETH212</span>
+        </div>
+
+        <a href="https://votre-lien-affiliation-1xbet.com" class="link-card" style="border: 2px solid #2972db;">
+            <img src="../1xbet_logo.png" alt="1XBET" width="100px" class="">
+            <span class="link-text">S'inscrire sur 1XBET</span>
+        </a>
+                <a href="https://votre-lien-affiliation-1xbet.com" class="link-card" style="border: 2px solid #2972db;">
+            <img src="../betwinner_logo.png" alt="1XBET" width="100px" class="">
+            <span class="link-text">S'inscrire sur BETWINNER</span>
+        </a>
+                <a href="https://votre-lien-affiliation-1xbet.com" class="link-card" style="border: 2px solid #2972db;">
+            <img src="../1win_logo.png" alt="1XBET" width="100px" class="">
+            <span class="link-text">S'inscrire sur 1WIN</span>
+        </a>
+
+        <a href="https://instagram.com/ton-compte" class="link-card">
+            <i class="fab fa-instagram"></i>
+            <span class="link-text">Instagram</span>
+        </a>
+
+        <a href="https://wa.me/ton-numero" class="link-card">
+            <i class="fab fa-whatsapp"></i>
+            <span class="link-text">Rejoindre sur WhatsApp</span>
+        </a>
+
+        <a href="https://youtube.com/ton-canal" class="link-card">
+            <i class="fab fa-youtube"></i>
+            <span class="link-text">Chaîne YouTube</span>
+        </a>
+
+        <a href="https://facebook.com/ton-profil" class="link-card">
+            <i class="fab fa-facebook"></i>
+            <span class="link-text">Page Facebook</span>
+        </a>
+
+        <a href="https://tiktok.com/@ton-compte" class="link-card">
+            <i class="fab fa-tiktok"></i>
+            <span class="link-text">TikTok</span>
+        </a>
+    </div>
+
+    <footer>
+        &copy; 2026 ActuSport
+    </footer>
+
+</body>
+</html>
